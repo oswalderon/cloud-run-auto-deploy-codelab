@@ -38,6 +38,8 @@ options:
   requestedVerifyOption: VERIFIED
   substitutionOption: ALLOW_LOOSE
   logging: CLOUD_LOGGING_ONLY
+  pool:
+    name: 'projects/elmercortez-dev/locations/europe-west1/workerPools/privatepool'
 substitutions:
   _DEPLOY_REGION: europe-west1
   _AR_HOSTNAME: europe-west1-docker.pkg.dev
@@ -45,8 +47,6 @@ substitutions:
   _TRIGGER_ID: cdc800e4-3b5c-4e10-a45f-e040e640b5d8
   _AR_PROJECT_ID: elmercortez-dev
   _SERVICE_NAME: cloud-run-auto-deploy-codelab-git
-  pool:
-    name: 'projects/elmercortez-dev/locations/europe-west1/workerPools/privatepool'
 tags:
   - gcp-cloud-build-deploy-cloud-run
   - cloud-run-auto-deploy-codelab-git
